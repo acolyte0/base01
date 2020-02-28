@@ -40,7 +40,7 @@ mongoose.connect(
 
 // Setting up views: EJS
 app.use(expressLayouts);
-app.set('view engine', 'ejs');
+app.set('view engine', __dirname + 'ejs');
 
 // Body Parser - after DB
 app.use(
